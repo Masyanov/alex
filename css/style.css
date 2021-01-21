@@ -102,11 +102,12 @@ padding: 0 0;
     margin-right: 15px;
     background: url(../img/facebook.png) center no-repeat;
     background-size: cover;
-    transition: background 500ms;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: border 500ms ease-in-out;
+    border-radius: 50%;
 }
 .socials-header__fb:hover {
-    background: url(../img/facebookhover.png) center no-repeat;
-    background-size: cover;
+    border: 2px solid var(--color-main);
 }
 .socials-header__vk {
     display: flex;
@@ -115,11 +116,12 @@ padding: 0 0;
     margin-right: 15px;
     background: url(../img/vk.png) center no-repeat;
     background-size: cover;
-    transition: background 500ms;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: border 500ms ease-in-out;
+    border-radius: 50%;
 }
 .socials-header__vk:hover {
-    background: url(../img/vkhover.png) center no-repeat;
-    background-size: cover;
+    border: 2px solid var(--color-main);
 }
 .socials-header__insta {
     display: flex;
@@ -127,11 +129,12 @@ padding: 0 0;
     width: 40px;
     background: url(../img/instagram.png) center no-repeat;
     background-size: cover;
-    transition: background 500ms;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: border 500ms ease-in-out;
+    border-radius: 50%;
 }
 .socials-header__insta:hover {
-    background: url(../img/instagramhover.png) center no-repeat;
-    background-size: cover;
+    border: 2px solid var(--color-main);
 }
 
 /* hero */
@@ -180,17 +183,25 @@ padding: 0 0;
 }
 
 .hero__link {
-    display: flex;
+    display: flex;    
+}
+
+.hero__link-bg {
+    width: 100px;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+}
+
+.hero__item:not(:last-child) {
+    margin-right: 15px;
 }
 
 .hero__portfolio {
     display: flex;
     width: 100px;
     height: 100px;
-    background: url(../img/portfolio.png) center no-repeat;
     border: 5px solid var(--color-main-dark);
-    margin-right: 15px;
     transition: border 500ms;
+    background: url(../img/portfolio.png) center no-repeat;
 }
 
 .hero__portfolio:hover {
@@ -368,11 +379,12 @@ padding: 0 0;
     margin-right: 15px;
     background: url(../img/facebook.png) center no-repeat;
     background-size: cover;
-    transition: background 500ms;
+    border: 3px solid var(--color-main-dark);
+    border-radius: 50%;
+    transition: border 500ms ease-in-out;
 }
 .footer-header__fb:hover {
-    background: url(../img/facebookhover.png) center no-repeat;
-    background-size: cover;
+    border: 3px solid var(--color-main);
 }
 .footer-header__vk {
     display: flex;
@@ -382,11 +394,12 @@ padding: 0 0;
     margin-right: 15px;
     background: url(../img/vk.png) center no-repeat;
     background-size: cover;
-    transition: background 500ms;
+    border: 3px solid var(--color-main-dark);
+    border-radius: 50%;
+    transition: border 500ms ease-in-out;
 }
 .footer-header__vk:hover {
-    background: url(../img/vkhover.png) center no-repeat;
-    background-size: cover;
+    border: 3px solid var(--color-main);
 }
 .footer-header__insta {
     display: flex;
@@ -396,11 +409,12 @@ padding: 0 0;
     margin-right: 15px;
     background: url(../img/instagram.png) center no-repeat;
     background-size: cover;
-    transition: background 500ms;
+    border: 3px solid var(--color-main-dark);
+    border-radius: 50%;
+    transition: border 500ms ease-in-out;
 }
 .footer-header__insta:hover {
-    background: url(../img/instagramhover.png) center no-repeat;
-    background-size: cover;
+    border: 3px solid var(--color-main);
 }
 .copyright {
     display: flex;
@@ -415,7 +429,7 @@ padding: 0 0;
         align-items: center;
         flex-direction: column-reverse;
         margin-top: 50px;
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
     .hero__leftblock {
         flex-direction: column;
